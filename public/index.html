@@ -10,11 +10,85 @@
       href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/7852e4b612.js"
+      crossorigin="anonymous"
+    ></script>
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <h1 class="text-3xl font-bold font-gemunu text-gega-red">Hello world!</h1>
-    </div>
+    <!-- Header section -->
+    <header class="bg-black py-6 lg:py-12 text-gega-grey  uppercase">
+      <!--  header container -->
+      <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
+        <!-- logo -->
+        <a href="#" class="pl-4 md:pl-0 text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-grey"> GEGA</a>
+        <!-- Mobile Menu -->
+        <div class="block md:hidden pr-4">
+          <div class="space-y-1 cursor-pointer">
+            <div class="bg-gega-white w-8 h-1 rounded"></div>
+            <div class="bg-gega-white w-8 h-1 rounded"></div>
+            <div class="bg-gega-white w-8 h-1 rounded"></div>
+          </div>
+        </div>
+        <!-- Navigation -->
+        <nav class="hidden md:flex justify-between flex-1">
+          <!-- menu -->
+          <ul class="flex items-center lg:text-lg space-x-4 lg:space-x-8 text-gega-grey">
+            <li>
+              <a href="#" class="hover:text-gega-melon transition duration-500"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-gega-melon transition duration-500"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-gega-melon transition duration-500"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-gega-melon transition duration-500"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!-- Login area -->
+          <div class="flex items-center space-x-4 lg:space-x-8">
+            <!-- search Area -->
+            <form>
+              <div class="group border-r px-4 mx-4 py-1 border-gega-red">
+                <input
+                  type="text"
+                  class="opacity-0 bg-transparent group-hover:opacity-100 border-b w-24 lg:w-48 border-gega-red transition duration-500 focus:outline-none"
+                />
+                <button class="-ml-4 group-hover:ml-0 transition duration-500 ">
+                  <i
+                    class="fas fa-search group-hover:text-gega-red transition duration-500 "
+                  ></i>
+                </button>
+              </div>
+            </form>
+            <!-- sing up area -->
+            <div class="flex items-center space-x-4 lg:space-x-8">
+              <a
+              href="#"
+              class="bg-transparent text-white px-4 py-2 rounded hover:bg-gega-red transition duration-500"
+              >Login</a
+            >
+              <a
+                href="#"
+                class="bg-gega-red text-white px-4 py-2 rounded hover:bg-gega-melon transition duration-500 whitespace-nowrap"
+                >Sign Up</a
+              >
+
+          </div>
+        </nav>
+      </div>
+    </header>
   </body>
 </html>
